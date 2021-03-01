@@ -1,8 +1,6 @@
 from django.db import models
-
 # Create your models here.
 from throttle_labs.app01.models import Student
-
 
 class UsersMan(models.Model):
     s_no = models.AutoField(primary_key=True)
@@ -14,6 +12,8 @@ class UsersMan(models.Model):
     class Meta:
         db_table="app02"
         managed = True
+
+
 
 
 
